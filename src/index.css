@@ -15,12 +15,19 @@ code {
 }
 
 .slide-container {
-  border: solid lightblue 3px;
+  position: absolute;
+  top: 25%;
+  left: 25%;
+  right: 25%;
+  border: double teal 10px;
   background-color: white;
+  padding: 3px;
 }
 
 .title {
   text-align: center;
+  border-bottom: solid 3px teal;
+  margin-bottom: 10px;
 }
 
 
@@ -30,6 +37,7 @@ code {
 
 .details {
   text-align: center;
+  padding: 10px;
 }
 
 img {
@@ -42,4 +50,13 @@ img {
   height: 30px;
   display: flex;
   justify-content: center;
+}
+button {
+  border: solid 2px teal;
+  background-color: lightskyblue;
+  margin-left: 5px;
+}
+
+button:active {
+  background-color: teal;
 }

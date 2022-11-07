@@ -18,9 +18,9 @@ const Slideshow = () => {
                 </section>
             </div>
             <div className='buttons'>
-                <button onClick={() => setSlide(filmData[0])}>↺ Start Over</button>
-                <button onClick={() => setSlide(filmData[i-=1])}>← Back</button>
-                <button onClick={() => setSlide(filmData[i+=1])}>Next →</button>
+                <button onClick={() => setSlide(filmData[0], i = 0)}>↺ Start Over</button>
+                <button disabled={i===0 ? true : false} onClick={() => setSlide(filmData[i-=1])}>← Back</button>
+                <button disabled={i===8 ? true : false}onClick={() => setSlide(filmData[i+=1])}>Next →</button>
                 {console.log(i)}
             </div>
         </section>
